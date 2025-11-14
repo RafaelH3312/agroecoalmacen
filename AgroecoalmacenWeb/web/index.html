@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Plantas - Agroecoalmacen</title>
+</head>
+<body>
+    <h1>Agregar Nueva Planta</h1>
+    <form action="PlantaServlet" method="post">
+        <label>Nombre común:</label><br>
+        <input type="text" name="nombre" required><br>
+
+        <label>Nombre científico:</label><br>
+        <input type="text" name="nombreCientifico" required><br>
+
+        <label>Tipo:</label><br>
+        <input type="text" name="tipo" required><br>
+
+        <label>Fecha:</label><br>
+        <input type="date" name="fecha" required><br>
+
+        <label>Etapa:</label><br>
+        <input type="text" name="etapa" required><br>
+
+        <label>Estado:</label><br>
+        <input type="text" name="estado" required><br><br>
+
+        <input type="submit" value="Agregar Planta">
+    </form>
+
+    <h2>Listado de Plantas</h2>
+    <a href="PlantaServlet">Ver todas las plantas</a>
+</body>
+</html>
